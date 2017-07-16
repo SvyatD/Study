@@ -1,0 +1,14 @@
+{
+  "name": "automation-platform-ui",
+  "version": "1.0.0",
+  "description": "test automation project",
+  "scripts": {
+    "test": "protractor config/protractor.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mulesoft-labs/automation-platform-ui.git"
+  },
+  "author": "svyatd",
+  "license": "ISC"
+}
