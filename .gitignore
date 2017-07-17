@@ -1,0 +1,33 @@
+### grunt ###
+# Grunt usually compiles files inside this directory
+dist/
+
+# Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
+.tmp/
+
+### VisualStudioCode ###
+.vscode
+
+node_modules
+npm-debug.log
+.DS_Store
+.tscache
+.settings
+.idea/
+.vscode/
+test/.baseDir.ts
+.vscode
+*.tmp.txt
+jsconfig.json
+.typings/
+reports
+testresults
+
+# IDEA
+# ----
+.idea
+.shelf
+/*.iml
+/*.ipr
+/*.iws
+/out

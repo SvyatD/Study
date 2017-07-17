@@ -10,5 +10,11 @@
     "url": "git+https://github.com/mulesoft-labs/automation-platform-ui.git"
   },
   "author": "svyatd",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "protractor": "^5.1.2",
+    "@mulesoft/automation-coreservices-ui": "^0.15.3",
+    "jasmine-spec-reporter": "^4.1.1"
+  }
 }
