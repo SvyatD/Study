@@ -1,16 +1,24 @@
-const { LoginManager, AnypointLandingPage } = require('@mulesoft/automation-coreservices-ui')
+const { LoginManager, AnypointLandingPage, CoreServicesNavigator } = require('@mulesoft/automation-coreservices-ui');
 
-describe('Given an authenticated user', () => {
-    beforeAll(() => {
-    browser.get('http://qax.anypoint.mulesoft.com');
-    const loginManager = new LoginManager();
-    const anypointLandingPage = new AnypointLandingPage();
+const navigator = new CoreServicesNavigator();
 
-    loginManager.loginAs('jsauto', 'Mule1234');
-    anypointLandingPage.at();
-});
+describe('Given an authenticated user on anypoint platform.', () => {
+  beforeAll(() => {
+  browser.get('http://qax.anypoint.mulesoft.com');
+  const loginManager = new LoginManager();
+  const anypointLandingPage = new AnypointLandingPage();
 
-    it('shoud have a title', () => {
-        expect(true).toEqual(true);
-    });
+  loginManager.loginAs('jsauto', 'Mule1234');
+  anypointLandingPage.at();
+  });
+
+  describe('When navigates to API Manager:', () => {
+    navigator.goToApiManager();
+  });
+
+  it('should have a title', ()=> {
+    expect(browser.getTitle()).toBe('Anypoint Platform for APIs / API Administration');
+  });
 })
+
+
