@@ -22,3 +22,4 @@ describe('Given an authenticated user on anypoint platform.', () => {
 })
 
 
+new
